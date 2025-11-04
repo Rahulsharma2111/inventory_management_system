@@ -1,0 +1,1306 @@
+2025-10-15 11:46:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-15 11:46:05 [main] INFO  c.m.InventoryManagementSystemApplication - Starting InventoryManagementSystemApplication using Java 25 with PID 9728 (D:\Mis Project\ims\Backend\mis\target\classes started by Rahul Sharma in D:\Mis Project\ims\Backend)
+2025-10-15 11:46:05 [main] INFO  c.m.InventoryManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 11:46:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15 11:46:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 5 JPA repository interfaces.
+2025-10-15 11:46:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-15 11:46:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-15 11:46:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-15 11:46:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15 11:46:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-15 11:46:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1301 ms
+2025-10-15 11:46:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15 11:46:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-15 11:46:07 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-15 11:46:07 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15 11:46:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-15 11:46:07 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@504b8705
+2025-10-15 11:46:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-15 11:46:07 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15 11:46:08 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15 11:46:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 11:46:08 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-15 11:46:09 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name jwtCustomDetailsService
+2025-10-15 11:46:09 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15 11:46:09 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+2025-10-15 11:46:09 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-15 11:46:09 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-15 11:46:09 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-15 11:46:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-15 11:46:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-15 11:46:09 [main] INFO  c.m.InventoryManagementSystemApplication - Started InventoryManagementSystemApplication in 4.842 seconds (process running for 5.164)
+2025-10-15 11:46:27 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-15 11:46:27 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-15 11:46:27 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-10-15 11:46:27 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-10-15 11:46:27 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-10-15 11:46:27 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7d3987a6
+2025-10-15 11:46:27 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@194971bd
+2025-10-15 11:46:27 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-15 11:46:27 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2025-10-15 11:46:29 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 11:46:29 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 11:46:29 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 11:46:29 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 11:46:29 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 11:46:29 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 11:46:29 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 11:46:29 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 11:46:29 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 11:46:29 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 11:46:29 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 11:46:29 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 11:46:29 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 11:46:29 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 11:46:29 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 11:46:29 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 11:46:29 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 11:46:29 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 11:46:29 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 11:46:29 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:03:24 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15 12:03:24 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-15 12:03:24 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:03:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-15 12:03:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-15 12:06:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-15 12:06:08 [main] INFO  c.m.InventoryManagementSystemApplication - Starting InventoryManagementSystemApplication using Java 25 with PID 2120 (D:\Mis Project\ims\Backend\mis\target\classes started by Rahul Sharma in D:\Mis Project\ims\Backend)
+2025-10-15 12:06:08 [main] INFO  c.m.InventoryManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 12:06:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15 12:06:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2025-10-15 12:06:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-15 12:06:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:06:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-15 12:06:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15 12:06:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-15 12:06:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1132 ms
+2025-10-15 12:06:09 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15 12:06:09 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-15 12:06:10 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-15 12:06:10 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15 12:06:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-15 12:06:10 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8af1c49
+2025-10-15 12:06:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-15 12:06:10 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15 12:06:11 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15 12:06:11 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:06:11 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-15 12:06:12 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name jwtCustomDetailsService
+2025-10-15 12:06:12 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15 12:06:12 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 15 mappings in 'requestMappingHandlerMapping'
+2025-10-15 12:06:12 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-15 12:06:12 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-15 12:06:12 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-15 12:06:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:06:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-15 12:06:12 [main] INFO  c.m.InventoryManagementSystemApplication - Started InventoryManagementSystemApplication in 4.446 seconds (process running for 4.755)
+2025-10-15 12:06:22 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-15 12:06:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1d900d84
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@37f76752
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-15 12:06:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-10-15 12:06:22 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:06:22 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:06:22 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:06:22 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:06:22.455479300, status=400}]
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:06:22 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:06:22 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:06:22 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:06:22 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:06:22 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:06:22 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:06:22.494497300, status=400}]
+2025-10-15 12:06:22 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:06:22 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:06:22 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:06:22 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:06:22 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:06:22 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:06:22 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:06:22 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:06:30 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - POST "/organisation/upload/14", parameters={multipart}
+2025-10-15 12:06:30 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#uploadFile(Long, MultipartFile)
+2025-10-15 12:06:31 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:06:31 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=C:\ModuloBytes\ims\14\media\3\Screenshot 2025-10-15 100311.png, meta={message=File uploaded su (truncated)...]
+2025-10-15 12:06:31 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:06:31 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:06:31 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:06:31 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:06:31 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100311.png]]
+2025-10-15 12:06:31 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:06:45 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:06:45 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:06:45 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:06:45 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:06:45 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:06:45 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100311.png]]
+2025-10-15 12:06:45 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:06:45 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:06:45 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:06:45 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:06:45 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:06:45 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:06:45 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:06:45 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:06:45 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:06:45 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100311.png]]
+2025-10-15 12:06:45 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:06:45 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:06:45 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:06:45 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:08:48 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 12:08:48 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 12:08:48 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:08:48 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=, meta={message=Fail to upload, error=true, statusCode=400}}]
+2025-10-15 12:08:48 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:10:33 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 12:10:33 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 12:10:33 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:10:33 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=, meta={message=Fail to upload, error=true, statusCode=400}}]
+2025-10-15 12:10:33 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:10:51 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15 12:10:51 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-15 12:10:51 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:10:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-15 12:10:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-15 12:10:54 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-15 12:10:54 [main] INFO  c.m.InventoryManagementSystemApplication - Starting InventoryManagementSystemApplication using Java 25 with PID 26548 (D:\Mis Project\ims\Backend\mis\target\classes started by Rahul Sharma in D:\Mis Project\ims\Backend)
+2025-10-15 12:10:54 [main] INFO  c.m.InventoryManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 12:10:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15 12:10:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+2025-10-15 12:10:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-15 12:10:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:10:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-15 12:10:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15 12:10:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-15 12:10:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1060 ms
+2025-10-15 12:10:56 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15 12:10:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-15 12:10:56 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-15 12:10:56 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15 12:10:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-15 12:10:56 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cfc0c48
+2025-10-15 12:10:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-15 12:10:56 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15 12:10:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15 12:10:57 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:10:57 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-15 12:10:58 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name jwtCustomDetailsService
+2025-10-15 12:10:58 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15 12:10:58 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 15 mappings in 'requestMappingHandlerMapping'
+2025-10-15 12:10:58 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-15 12:10:58 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-15 12:10:58 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-15 12:10:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:10:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-15 12:10:58 [main] INFO  c.m.InventoryManagementSystemApplication - Started InventoryManagementSystemApplication in 4.278 seconds (process running for 4.553)
+2025-10-15 12:11:38 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15 12:11:38 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-15 12:11:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:11:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-15 12:11:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-15 12:11:40 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-15 12:11:40 [main] INFO  c.m.InventoryManagementSystemApplication - Starting InventoryManagementSystemApplication using Java 25 with PID 21716 (D:\Mis Project\ims\Backend\mis\target\classes started by Rahul Sharma in D:\Mis Project\ims\Backend)
+2025-10-15 12:11:40 [main] INFO  c.m.InventoryManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 12:11:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15 12:11:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 5 JPA repository interfaces.
+2025-10-15 12:11:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-15 12:11:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:11:41 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-15 12:11:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15 12:11:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-15 12:11:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1215 ms
+2025-10-15 12:11:42 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15 12:11:42 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-15 12:11:42 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-15 12:11:42 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15 12:11:42 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-15 12:11:42 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@763b0996
+2025-10-15 12:11:42 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-15 12:11:42 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15 12:11:43 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15 12:11:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:11:43 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-15 12:11:44 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name jwtCustomDetailsService
+2025-10-15 12:11:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15 12:11:44 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 15 mappings in 'requestMappingHandlerMapping'
+2025-10-15 12:11:44 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-15 12:11:44 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-15 12:11:44 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-15 12:11:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:11:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-15 12:11:45 [main] INFO  c.m.InventoryManagementSystemApplication - Started InventoryManagementSystemApplication in 4.796 seconds (process running for 5.085)
+2025-10-15 12:12:00 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-15 12:12:00 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-15 12:12:00 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-10-15 12:12:00 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-10-15 12:12:00 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-10-15 12:12:00 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@481f2acb
+2025-10-15 12:12:00 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4cf2bf26
+2025-10-15 12:12:00 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-15 12:12:00 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-15 12:12:00 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 12:12:00 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 12:12:00 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:12:00 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=, meta={message=Image not deleted, error=true, statusCode=400}}]
+2025-10-15 12:12:00 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:12:47 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15 12:12:47 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-15 12:12:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:12:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-15 12:12:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-15 12:12:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-15 12:12:50 [main] INFO  c.m.InventoryManagementSystemApplication - Starting InventoryManagementSystemApplication using Java 25 with PID 16204 (D:\Mis Project\ims\Backend\mis\target\classes started by Rahul Sharma in D:\Mis Project\ims\Backend)
+2025-10-15 12:12:50 [main] INFO  c.m.InventoryManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 12:12:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15 12:12:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+2025-10-15 12:12:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-15 12:12:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:12:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-15 12:12:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15 12:12:52 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-15 12:12:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1228 ms
+2025-10-15 12:12:52 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15 12:12:52 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-15 12:12:52 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-15 12:12:52 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15 12:12:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-15 12:12:52 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@347123dc
+2025-10-15 12:12:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-15 12:12:52 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15 12:12:53 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15 12:12:53 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:12:53 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-15 12:12:54 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name jwtCustomDetailsService
+2025-10-15 12:12:54 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15 12:12:54 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 15 mappings in 'requestMappingHandlerMapping'
+2025-10-15 12:12:54 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-15 12:12:54 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-15 12:12:54 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-15 12:12:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:12:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-15 12:12:54 [main] INFO  c.m.InventoryManagementSystemApplication - Started InventoryManagementSystemApplication in 4.402 seconds (process running for 4.771)
+2025-10-15 12:14:05 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-15 12:14:05 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-15 12:14:05 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-10-15 12:14:05 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-10-15 12:14:05 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-10-15 12:14:05 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@670738b2
+2025-10-15 12:14:05 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1d0c7a03
+2025-10-15 12:14:05 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-15 12:14:05 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-10-15 12:14:06 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:14:06 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:14:06 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:14:06 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:14:06 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:14:06 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:14:06 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:14:06 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:14:06.172586200, status=400}]
+2025-10-15 12:14:06 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:14:06 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:14:06 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:14:06 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:14:06 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:14:06 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:14:06 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:14:06 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:14:06.247183, status=400}]
+2025-10-15 12:14:06 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:14:06 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:14:06 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:14:06 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:14:06 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:14:06 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:14:06 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:14:06 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:14:15 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/organisation/upload/14", parameters={multipart}
+2025-10-15 12:14:15 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#uploadFile(Long, MultipartFile)
+2025-10-15 12:14:16 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:14:16 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=C:\ModuloBytes\ims\14\media\3\Screenshot 2025-10-12 235549.png, meta={message=File uploaded su (truncated)...]
+2025-10-15 12:14:16 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:14:16 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:14:16 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:14:16 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:14:16 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-12%20235549.png]]
+2025-10-15 12:14:16 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:14:18 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:14:18 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:14:18 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:14:18 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:14:18 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:14:18 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-12%20235549.png]]
+2025-10-15 12:14:18 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:14:18 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:14:18 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:14:18 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:14:18 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:14:18 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:14:18 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:14:18 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:14:18 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:14:18 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-12%20235549.png]]
+2025-10-15 12:14:18 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:14:18 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:14:18 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:14:18 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:16:54 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 12:16:54 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 12:16:54 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:16:54 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=Image Deleted Successfully, meta={message=SUCCESS, error=false, statusCode=200}}]
+2025-10-15 12:16:54 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:19:01 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15 12:19:01 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-15 12:19:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:19:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-15 12:19:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-15 12:19:04 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-15 12:19:04 [main] INFO  c.m.InventoryManagementSystemApplication - Starting InventoryManagementSystemApplication using Java 25 with PID 21756 (D:\Mis Project\ims\Backend\mis\target\classes started by Rahul Sharma in D:\Mis Project\ims\Backend)
+2025-10-15 12:19:04 [main] INFO  c.m.InventoryManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 12:19:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15 12:19:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 5 JPA repository interfaces.
+2025-10-15 12:19:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-15 12:19:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:19:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-15 12:19:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15 12:19:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-15 12:19:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1226 ms
+2025-10-15 12:19:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15 12:19:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-15 12:19:06 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-15 12:19:06 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15 12:19:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-15 12:19:06 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cfc0c48
+2025-10-15 12:19:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-15 12:19:06 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15 12:19:07 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15 12:19:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:19:07 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-15 12:19:08 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name jwtCustomDetailsService
+2025-10-15 12:19:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15 12:19:08 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 15 mappings in 'requestMappingHandlerMapping'
+2025-10-15 12:19:08 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-15 12:19:08 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-15 12:19:08 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-15 12:19:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:19:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-15 12:19:08 [main] INFO  c.m.InventoryManagementSystemApplication - Started InventoryManagementSystemApplication in 4.472 seconds (process running for 4.764)
+2025-10-15 12:19:14 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-15 12:19:14 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-15 12:19:14 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-10-15 12:19:14 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-10-15 12:19:14 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-10-15 12:19:14 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@64a16a10
+2025-10-15 12:19:14 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@29c15c32
+2025-10-15 12:19:14 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-15 12:19:14 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-15 12:19:14 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 12:19:14 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 12:19:14 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:19:14 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=, meta={message=Image not deleted1, error=true, statusCode=400}}]
+2025-10-15 12:19:14 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:19:38 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/organisation/upload/14", parameters={multipart}
+2025-10-15 12:19:38 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#uploadFile(Long, MultipartFile)
+2025-10-15 12:19:38 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:19:38 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=C:\ModuloBytes\ims\14\media\3\Screenshot 2025-10-12 235549.png, meta={message=File uploaded su (truncated)...]
+2025-10-15 12:19:38 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:19:38 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:19:38 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:19:38 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:19:38 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-12%20235549.png]]
+2025-10-15 12:19:38 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:19:46 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 12:19:46 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 12:19:46 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:19:46 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=Image Deleted Successfully, meta={message=SUCCESS, error=false, statusCode=200}}]
+2025-10-15 12:19:46 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:21:09 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15 12:21:09 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-15 12:21:09 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:21:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-15 12:21:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-15 12:21:12 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-15 12:21:12 [main] INFO  c.m.InventoryManagementSystemApplication - Starting InventoryManagementSystemApplication using Java 25 with PID 23268 (D:\Mis Project\ims\Backend\mis\target\classes started by Rahul Sharma in D:\Mis Project\ims\Backend)
+2025-10-15 12:21:12 [main] INFO  c.m.InventoryManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 12:21:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15 12:21:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+2025-10-15 12:21:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-15 12:21:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:21:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-15 12:21:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15 12:21:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-15 12:21:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1077 ms
+2025-10-15 12:21:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15 12:21:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-15 12:21:14 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-15 12:21:14 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15 12:21:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-15 12:21:14 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@618f627b
+2025-10-15 12:21:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-15 12:21:14 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15 12:21:15 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15 12:21:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:21:15 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-15 12:21:16 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name jwtCustomDetailsService
+2025-10-15 12:21:16 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15 12:21:16 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 15 mappings in 'requestMappingHandlerMapping'
+2025-10-15 12:21:16 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-15 12:21:16 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-15 12:21:16 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-15 12:21:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:21:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-15 12:21:16 [main] INFO  c.m.InventoryManagementSystemApplication - Started InventoryManagementSystemApplication in 4.294 seconds (process running for 4.571)
+2025-10-15 12:21:21 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-15 12:21:21 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-15 12:21:21 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-10-15 12:21:21 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-10-15 12:21:21 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-10-15 12:21:21 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3d6fe206
+2025-10-15 12:21:21 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2a201aa9
+2025-10-15 12:21:21 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-15 12:21:21 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-15 12:21:21 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 12:21:21 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 12:21:21 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:21:21 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=, meta={message=Image not deleted1, error=true, statusCode=400}}]
+2025-10-15 12:21:21 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:21:50 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15 12:21:50 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-15 12:21:50 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:21:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-15 12:21:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-15 12:21:53 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-15 12:21:53 [main] INFO  c.m.InventoryManagementSystemApplication - Starting InventoryManagementSystemApplication using Java 25 with PID 15568 (D:\Mis Project\ims\Backend\mis\target\classes started by Rahul Sharma in D:\Mis Project\ims\Backend)
+2025-10-15 12:21:53 [main] INFO  c.m.InventoryManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 12:21:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15 12:21:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+2025-10-15 12:21:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-15 12:21:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:21:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-15 12:21:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15 12:21:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-15 12:21:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1130 ms
+2025-10-15 12:21:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15 12:21:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-15 12:21:55 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-15 12:21:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15 12:21:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-15 12:21:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3355168
+2025-10-15 12:21:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-15 12:21:55 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15 12:21:56 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15 12:21:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 12:21:56 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-15 12:21:57 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name jwtCustomDetailsService
+2025-10-15 12:21:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15 12:21:57 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 15 mappings in 'requestMappingHandlerMapping'
+2025-10-15 12:21:57 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-15 12:21:57 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-15 12:21:57 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-15 12:21:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-15 12:21:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-15 12:21:57 [main] INFO  c.m.InventoryManagementSystemApplication - Started InventoryManagementSystemApplication in 4.35 seconds (process running for 4.641)
+2025-10-15 12:22:01 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-15 12:22:01 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-15 12:22:01 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-10-15 12:22:01 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-10-15 12:22:01 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-10-15 12:22:01 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7a1f008
+2025-10-15 12:22:01 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1d900d84
+2025-10-15 12:22:01 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-15 12:22:01 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-10-15 12:22:02 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 12:22:02 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 12:22:02 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:22:02 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=, meta={message=Image not deleted1, error=true, statusCode=400}}]
+2025-10-15 12:22:02 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:22:54 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/organisation/upload/14", parameters={multipart}
+2025-10-15 12:22:54 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#uploadFile(Long, MultipartFile)
+2025-10-15 12:22:54 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:22:54 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=C:\ModuloBytes\ims\14\media\3\Screenshot 2025-10-15 100328.png, meta={message=File uploaded su (truncated)...]
+2025-10-15 12:22:54 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:22:54 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:22:54 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:22:54 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:22:54 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 12:22:54 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:31:21 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:31:21 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:31:21 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:31:21 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:31:21 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:31:21 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 12:31:21 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:31:21 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:31:21 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:31:21 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:31:21 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:31:21 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:31:21 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 12:31:21 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:31:21 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:31:22 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:31:22 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:31:22 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:31:22 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:31:22 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:38:45 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:38:45 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:38:45 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:38:45 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:38:45 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:38:45 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 12:38:45 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:38:45 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:38:45 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:38:45 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:38:45 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:38:45 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:38:45 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:38:45 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:38:45 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:38:45 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 12:38:45 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:38:45 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:38:45 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:38:45 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:40:49 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:40:49 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:40:49 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:40:49 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:40:49 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:40:49 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 12:40:49 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:40:49 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:40:49 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:40:49 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:40:49 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:40:49 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:40:49 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:40:49 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:40:49 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:40:49 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 12:40:49 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:40:49 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:40:49 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:40:49 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:46:24 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:46:24 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:46:24 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:46:24 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:46:24 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:46:24 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 12:46:24 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:46:24 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:46:24 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:46:24 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:46:24 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:46:24 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:46:24 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:46:24 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:46:24 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:46:24 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 12:46:24 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:46:24 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:46:24 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:46:24 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:48:39 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:48:39 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:48:39 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:48:39 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:48:39 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:48:39 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 12:48:39 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:48:39 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:48:39 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:48:39 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:48:39 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:48:39 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:48:39 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:48:39 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:48:39 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:48:39 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 12:48:39 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:48:39 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:48:39 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:48:39 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:50:57 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 12:50:57 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 12:50:57 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:50:57 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=Image Deleted Successfully, meta={message=SUCCESS, error=false, statusCode=200}}]
+2025-10-15 12:50:57 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:51:00 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:51:00 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:51:00 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:51:00 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:51:00 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:51:00 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:51:00 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:51:00 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:51:00.362064600, status=400}]
+2025-10-15 12:51:00 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:51:00 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:51:00 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:51:00 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:51:00 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:51:00 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:51:00 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:51:00 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:51:00 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:51:00 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:51:00 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:51:00.393062200, status=400}]
+2025-10-15 12:51:00 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:51:00 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:51:00 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:51:00 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:51:00 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:52:14 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:52:14 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:52:14 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:52:14 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:52:14 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:52:14 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:52:14 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:52:14.145937100, status=400}]
+2025-10-15 12:52:14 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:52:14 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:52:14 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:52:14 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:52:14 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:52:14 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:52:14 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:52:14 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:52:14 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:52:14 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:52:14 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:52:14 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:52:14.168940, status=400}]
+2025-10-15 12:52:14 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:52:14 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:52:14 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:52:14 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:52:14 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:53:11 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:53:11 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:53:11 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:53:11 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:53:11 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:53:11.513744800, status=400}]
+2025-10-15 12:53:11 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:53:11 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:53:11 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/dashboard/14", parameters={}
+2025-10-15 12:53:11 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-10-15 12:53:11 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:53:11 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:53:11 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:53:11 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:53:11 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:53:11.574895200, status=400}]
+2025-10-15 12:53:11 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:53:11 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:53:11 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:53:11 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=4, totalSalesAmount=1725.16), meta={message=Da (truncated)...]
+2025-10-15 12:53:11 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:53:11 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/dashboard/14", parameters={}
+2025-10-15 12:53:11 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-10-15 12:53:11 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:53:11 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=4, totalSalesAmount=1725.16), meta={message=Da (truncated)...]
+2025-10-15 12:53:11 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:53:13 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:53:13 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/dashboard/14", parameters={}
+2025-10-15 12:53:13 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-10-15 12:53:13 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:53:13 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:53:13 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=4, totalSalesAmount=1725.16), meta={message=Da (truncated)...]
+2025-10-15 12:53:13 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:53:13 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:53:13 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:53:13 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:53:13.881754600, status=400}]
+2025-10-15 12:53:13 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:53:13 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:53:13 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/dashboard/14", parameters={}
+2025-10-15 12:53:13 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-10-15 12:53:13 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:53:13 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:53:13 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:53:13 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=4, totalSalesAmount=1725.16), meta={message=Da (truncated)...]
+2025-10-15 12:53:13 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:53:13 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:53:13 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:53:13 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:53:13.901264, status=400}]
+2025-10-15 12:53:13 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:53:13 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:53:19 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:53:19 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:53:19 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/dashboard/14", parameters={}
+2025-10-15 12:53:19 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-10-15 12:53:19 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:53:19 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=4, totalSalesAmount=1725.16), meta={message=Da (truncated)...]
+2025-10-15 12:53:19 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:53:19 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:53:19 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:53:19 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:53:19.879204, status=400}]
+2025-10-15 12:53:19 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:53:19 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:53:19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:53:19 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/dashboard/14", parameters={}
+2025-10-15 12:53:19 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:53:19 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-10-15 12:53:19 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:53:19 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=4, totalSalesAmount=1725.16), meta={message=Da (truncated)...]
+2025-10-15 12:53:19 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:53:19 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:53:19 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:53:19 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:53:19.906205800, status=400}]
+2025-10-15 12:53:19 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:53:19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:22 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:22 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:22 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/dashboard/14", parameters={}
+2025-10-15 12:54:22 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-10-15 12:54:22 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:22 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=4, totalSalesAmount=1725.16), meta={message=Da (truncated)...]
+2025-10-15 12:54:22 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:54:22 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:22 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:54:22.172391800, status=400}]
+2025-10-15 12:54:22 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:22 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:54:22 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:22 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/dashboard/14", parameters={}
+2025-10-15 12:54:22 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:22 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:22 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-10-15 12:54:22 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:22 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=4, totalSalesAmount=1725.16), meta={message=Da (truncated)...]
+2025-10-15 12:54:22 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:54:22 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:22 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:54:22.191270700, status=400}]
+2025-10-15 12:54:22 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:22 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:54:22 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:32 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/organisation/upload/14", parameters={multipart}
+2025-10-15 12:54:32 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#uploadFile(Long, MultipartFile)
+2025-10-15 12:54:32 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:32 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=C:\ModuloBytes\ims\14\media\3\Screenshot 2025-10-13 095010.png, meta={message=File uploaded su (truncated)...]
+2025-10-15 12:54:32 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:32 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:32 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:32 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:54:32 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-13%20095010.png]]
+2025-10-15 12:54:32 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:38 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:38 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:38 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/dashboard/14", parameters={}
+2025-10-15 12:54:38 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-10-15 12:54:38 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:54:38 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-13%20095010.png]]
+2025-10-15 12:54:38 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:38 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=4, totalSalesAmount=1725.16), meta={message=Da (truncated)...]
+2025-10-15 12:54:38 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:38 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:38 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/dashboard/14", parameters={}
+2025-10-15 12:54:38 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:38 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-10-15 12:54:38 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:38 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:38 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=4, totalSalesAmount=1725.16), meta={message=Da (truncated)...]
+2025-10-15 12:54:38 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:38 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:54:38 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-13%20095010.png]]
+2025-10-15 12:54:38 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:42 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 12:54:42 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 12:54:42 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:42 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=Image Deleted Successfully, meta={message=SUCCESS, error=false, statusCode=200}}]
+2025-10-15 12:54:42 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:47 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:47 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:54:47 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:47 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:54:47 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:54:47 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:47 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:54:47.444784500, status=400}]
+2025-10-15 12:54:47 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:54:47 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:47 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:47 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:54:47 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:47 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:47 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:47 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:54:47 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:54:47 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:54:47 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:47 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:54:47.482788200, status=400}]
+2025-10-15 12:54:47 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:54:47 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:47 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:47 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:54:47 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:50 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:54:50 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:54:50 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/order/14", parameters={}
+2025-10-15 12:54:50 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrderController#getAllOrder(Long, int, int)
+2025-10-15 12:54:50 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:50 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:54:50 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:50 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:54:50 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:54:50 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:50 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:54:50 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:50 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:50 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[com.mis.DTO.Response.OrderResponse@5be2083, com.mis.DTO.Response.OrderResponse@24dbd5b9, com. (truncated)...]
+2025-10-15 12:54:50 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:50 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/order/14", parameters={}
+2025-10-15 12:54:50 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrderController#getAllOrder(Long, int, int)
+2025-10-15 12:54:50 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:50 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[com.mis.DTO.Response.OrderResponse@6bf0db44, com.mis.DTO.Response.OrderResponse@b19562f, com. (truncated)...]
+2025-10-15 12:54:50 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:50 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:50 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:50 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:54:50 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:50 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:54:50.241970200, status=400}]
+2025-10-15 12:54:50 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:54:50 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:50 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:50 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:50 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:54:50 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:50 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:54:50.279492600, status=400}]
+2025-10-15 12:54:50 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:54:50 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:51 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/dashboard/14", parameters={}
+2025-10-15 12:54:51 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:51 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:51 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-10-15 12:54:51 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:51 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=4, totalSalesAmount=1725.16), meta={message=Da (truncated)...]
+2025-10-15 12:54:51 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:54:51 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:51 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:51 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:54:51.677825300, status=400}]
+2025-10-15 12:54:51 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:54:51 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:51 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:51 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/dashboard/14", parameters={}
+2025-10-15 12:54:51 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:51 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-10-15 12:54:51 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:51 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=4, totalSalesAmount=1725.16), meta={message=Da (truncated)...]
+2025-10-15 12:54:51 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:51 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:54:51 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:51 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:54:51.713825300, status=400}]
+2025-10-15 12:54:51 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:54:51 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:54 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/order/14", parameters={}
+2025-10-15 12:54:54 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:54:54 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:54:54 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrderController#getAllOrder(Long, int, int)
+2025-10-15 12:54:54 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:54 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[com.mis.DTO.Response.OrderResponse@1cad4246, com.mis.DTO.Response.OrderResponse@32ca1e5c, com (truncated)...]
+2025-10-15 12:54:54 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:54 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:54:54 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:54 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:54 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/order/14", parameters={}
+2025-10-15 12:54:54 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:54:54 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrderController#getAllOrder(Long, int, int)
+2025-10-15 12:54:54 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:54:54 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:54 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[com.mis.DTO.Response.OrderResponse@64a0f87e, com.mis.DTO.Response.OrderResponse@41f7e6aa, com (truncated)...]
+2025-10-15 12:54:54 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:54 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:54 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:54:54 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:54 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:54 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:54 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:54:54 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:54 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:54:54.399265600, status=400}]
+2025-10-15 12:54:54 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:54:54 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:54 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:54 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:54 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:54:54 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:54 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:54:54.425015100, status=400}]
+2025-10-15 12:54:54 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:54:54 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:55 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:54:55 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:55 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:54:55 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:55 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:54:55 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:55 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:54:55.986221700, status=400}]
+2025-10-15 12:54:55 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:54:55 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:55 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:55 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:54:55 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:54:56 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:54:56 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:54:56 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:54:56 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:54:56 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:54:56 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:56 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:54:56.030210700, status=400}]
+2025-10-15 12:54:56 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:54:56 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:54:56 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:54:56 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:54:56 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:55:00 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:55:00 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:55:00 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:55:00 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:55:00 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:55:00 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:00 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:55:00.217839200, status=400}]
+2025-10-15 12:55:00 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:00 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:55:00 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:55:00 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:55:00 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:55:00 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:55:00 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:55:00 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:55:00 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:55:00 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:55:00 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:00 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:55:00.237703700, status=400}]
+2025-10-15 12:55:00 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:55:00 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:55:00 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:00 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:55:00 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:55:10 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:55:10 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:55:10 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:55:10 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:55:10 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:10 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:55:10 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:10 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:55:10 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:55:10.246749900, status=400}]
+2025-10-15 12:55:10 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:55:10 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:55:10 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:55:10 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:55:10 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:55:10 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:55:10 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:55:10 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:55:10 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:10 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:10 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:55:10.267746300, status=400}]
+2025-10-15 12:55:10 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:55:10 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:55:10 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:55:10 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:55:13 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:55:13 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:55:13 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:55:13 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:55:13 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:55:13 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:13 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:13 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:55:13.890205300, status=400}]
+2025-10-15 12:55:13 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:55:13 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:55:13 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:55:13 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:55:13 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:55:13 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:55:13 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:55:13 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:55:13 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 12:55:13 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:13 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:13 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T12:55:13.912205800, status=400}]
+2025-10-15 12:55:13 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:55:13 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 12:55:13 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:55:13 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:55:20 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 12:55:20 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 12:55:20 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:20 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=, meta={message=Image not deleted1, error=true, statusCode=400}}]
+2025-10-15 12:55:20 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:55:59 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 12:55:59 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 12:55:59 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:55:59 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=, meta={message=Image not deleted1, error=true, statusCode=400}}]
+2025-10-15 12:55:59 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 12:56:53 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/organisation/upload/14", parameters={multipart}
+2025-10-15 12:56:53 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#uploadFile(Long, MultipartFile)
+2025-10-15 12:56:53 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:56:53 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=C:\ModuloBytes\ims\14\media\3\Screenshot 2025-10-12 235549.png, meta={message=File uploaded su (truncated)...]
+2025-10-15 12:56:53 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:56:53 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:56:53 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:56:53 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:56:53 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-12%20235549.png]]
+2025-10-15 12:56:53 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:58:01 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:58:01 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:58:01 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:58:01 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:58:01 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:58:01 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-12%20235549.png]]
+2025-10-15 12:58:01 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:58:01 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:58:01 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:58:01 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:58:01 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 12:58:01 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:58:01 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 12:58:01 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:58:01 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:58:01 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:58:01 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-12%20235549.png]]
+2025-10-15 12:58:01 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 12:58:01 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:58:01 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:58:53 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/organisation/upload/14", parameters={multipart}
+2025-10-15 12:58:53 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#uploadFile(Long, MultipartFile)
+2025-10-15 12:58:53 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 12:58:53 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=C:\ModuloBytes\ims\14\media\3\Screenshot 2025-10-15 100328.png, meta={message=File uploaded su (truncated)...]
+2025-10-15 12:58:53 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 12:58:53 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 12:58:53 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 12:58:53 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 12:58:53 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 12:58:53 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:01:12 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 13:01:12 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 13:01:12 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:01:12 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=Image Deleted Successfully, meta={message=SUCCESS, error=false, statusCode=200}}]
+2025-10-15 13:01:12 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 13:02:04 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 13:02:04 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T13:02:04.261538300, status=400}]
+2025-10-15 13:02:04 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 13:02:04 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 13:02:04 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 13:02:04 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 13:02:04 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T13:02:04.286537500, status=400}]
+2025-10-15 13:02:04 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:02:04 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 13:02:04 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 13:02:04 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:02:10 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/organisation/upload/14", parameters={multipart}
+2025-10-15 13:02:10 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#uploadFile(Long, MultipartFile)
+2025-10-15 13:02:10 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:02:10 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=C:\ModuloBytes\ims\14\media\3\Screenshot 2025-10-15 100311.png, meta={message=File uploaded su (truncated)...]
+2025-10-15 13:02:10 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:02:10 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 13:02:10 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 13:02:10 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 13:02:10 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100311.png]]
+2025-10-15 13:02:10 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:02:16 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 13:02:16 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 13:02:16 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:02:16 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=Image Deleted Successfully, meta={message=SUCCESS, error=false, statusCode=200}}]
+2025-10-15 13:02:16 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:02:16 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 13:02:16 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 13:02:16 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 13:02:16 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:02:16 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T13:02:16.413460800, status=400}]
+2025-10-15 13:02:16 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 13:02:16 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 13:02:59 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 13:02:59 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 13:02:59 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 13:02:59 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 13:02:59 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 13:02:59 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:02:59 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:02:59 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 13:02:59 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T13:02:59.092929200, status=400}]
+2025-10-15 13:02:59 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 13:02:59 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:02:59 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 13:02:59 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 13:02:59 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 13:02:59 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 13:02:59 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 13:02:59 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 13:02:59 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:02:59 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:02:59 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 13:02:59 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T13:02:59.112663600, status=400}]
+2025-10-15 13:02:59 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 13:02:59 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:02:59 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 13:03:05 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/organisation/upload/14", parameters={multipart}
+2025-10-15 13:03:05 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#uploadFile(Long, MultipartFile)
+2025-10-15 13:03:05 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:03:05 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=C:\ModuloBytes\ims\14\media\3\Screenshot 2025-10-15 100311.png, meta={message=File uploaded su (truncated)...]
+2025-10-15 13:03:05 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:03:05 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 13:03:05 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 13:03:05 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 13:03:05 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100311.png]]
+2025-10-15 13:03:05 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:03:11 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/organisation/14", parameters={}
+2025-10-15 13:03:11 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#deleteLogoImage(Long)
+2025-10-15 13:03:11 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:03:11 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=Image Deleted Successfully, meta={message=SUCCESS, error=false, statusCode=200}}]
+2025-10-15 13:03:11 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:03:30 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 13:03:30 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 13:03:30 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 13:03:30 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 13:03:30 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 13:03:30 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:03:30 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T13:03:30.783095300, status=400}]
+2025-10-15 13:03:30 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 13:03:30 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 13:03:30 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:03:30 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 13:03:30 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:03:30 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 13:03:30 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 13:03:30 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 13:03:30 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 13:03:30 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.mis.Exception.GlobalExceptionHandler#handleRuntime(RuntimeException)
+2025-10-15 13:03:30 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:03:30 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Bad Request, message=null, timestamp=2025-10-15T13:03:30.811100400, status=400}]
+2025-10-15 13:03:30 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2025-10-15 13:03:30 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-10-15 13:03:30 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:03:30 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 13:03:30 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:03:36 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/organisation/upload/14", parameters={multipart}
+2025-10-15 13:03:36 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#uploadFile(Long, MultipartFile)
+2025-10-15 13:03:36 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 13:03:36 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=C:\ModuloBytes\ims\14\media\3\Screenshot 2025-10-15 100328.png, meta={message=File uploaded su (truncated)...]
+2025-10-15 13:03:36 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 13:03:36 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 13:03:36 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 13:03:36 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 13:03:36 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 13:03:36 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 14:38:27 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 14:38:27 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 14:38:27 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 14:38:27 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 14:38:27 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 14:38:27 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 14:38:27 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 14:38:27 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 14:38:27 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 14:38:27 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 14:38:28 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 14:38:28 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 14:38:28 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 14:38:28 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 14:38:28 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 14:38:28 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 14:38:28 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 14:38:28 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 14:38:28 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 14:38:28 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 14:44:36 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 14:44:36 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 14:44:36 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 14:44:36 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 14:44:36 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 14:44:36 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 14:44:36 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 14:44:36 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 14:44:36 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 14:44:36 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 14:44:37 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/product/14", parameters={}
+2025-10-15 14:44:37 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.ProductController#getAllProduct(Long)
+2025-10-15 14:44:37 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/organisation/14", parameters={}
+2025-10-15 14:44:37 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-10-15 14:44:37 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-15 14:44:37 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{data=[ProductResponse(id=1, name=shiv, category=10fsaddfsfs, description=dz, price=100.0, stockQuan (truncated)...]
+2025-10-15 14:44:37 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Found 'Content-Type:image/png' in response
+2025-10-15 14:44:37 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [URL [file:///C:/ModuloBytes/ims/14/media/3/Screenshot%202025-10-15%20100328.png]]
+2025-10-15 14:44:37 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 14:44:37 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-15 14:44:46 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m49s48ms4µs600ns).
+2025-10-15 14:45:02 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15 14:45:02 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-15 14:45:02 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 14:45:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-15 14:45:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
