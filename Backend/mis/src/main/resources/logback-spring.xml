@@ -1,72 +1,72 @@
 
-<!--<?xml version="1.0" encoding="UTF-8"?>-->
-<configuration debug="true">
+<!--&lt;!&ndash;<?xml version="1.0" encoding="UTF-8"?>&ndash;&gt;-->
+<!--<configuration debug="true">-->
 
-    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%X{requestId}] [%thread] %-5level %logger{36}.%M\(%line\) - %msg%n"/>
+<!--    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%X{requestId}] [%thread] %-5level %logger{36}.%M\(%line\) - %msg%n"/>-->
 
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/imsApp.log</file>
+<!--    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <file>logs/imsApp.log</file>-->
 
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>logs/imsApp-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>10MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-            <!-- keep 7 days of history -->
-            <maxHistory>7</maxHistory>
-            <totalSizeCap>100MB</totalSizeCap>
-        </rollingPolicy>
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            <fileNamePattern>logs/imsApp-%d{yyyy-MM-dd}.%i.log</fileNamePattern>-->
+<!--            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">-->
+<!--                <maxFileSize>10MB</maxFileSize>-->
+<!--            </timeBasedFileNamingAndTriggeringPolicy>-->
+<!--            &lt;!&ndash; keep 7 days of history &ndash;&gt;-->
+<!--            <maxHistory>7</maxHistory>-->
+<!--            <totalSizeCap>100MB</totalSizeCap>-->
+<!--        </rollingPolicy>-->
 
-        <encoder>
-            <pattern>${LOG_PATTERN}</pattern>
-        </encoder>
-    </appender>
+<!--        <encoder>-->
+<!--            <pattern>${LOG_PATTERN}</pattern>-->
+<!--        </encoder>-->
+<!--    </appender>-->
 
-    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>${LOG_PATTERN}</pattern>
-        </encoder>
-    </appender>
+<!--    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">-->
+<!--        <encoder>-->
+<!--            <pattern>${LOG_PATTERN}</pattern>-->
+<!--        </encoder>-->
+<!--    </appender>-->
 
-    <!-- Logger for your application packages -->
-    <logger name="com.Practice" level="DEBUG" additivity="false">
-        <appender-ref ref="CONSOLE" />
-        <appender-ref ref="FILE" />
-    </logger>
+<!--    &lt;!&ndash; Logger for your application packages &ndash;&gt;-->
+<!--    <logger name="com.Practice" level="DEBUG" additivity="false">-->
+<!--        <appender-ref ref="CONSOLE" />-->
+<!--        <appender-ref ref="FILE" />-->
+<!--    </logger>-->
 
-    <root level="INFO">
-        <appender-ref ref="CONSOLE" />
-        <appender-ref ref="FILE" />
-    </root>
+<!--    <root level="INFO">-->
+<!--        <appender-ref ref="CONSOLE" />-->
+<!--        <appender-ref ref="FILE" />-->
+<!--    </root>-->
 
-</configuration>
+<!--</configuration>-->
 
-        <!--<configuration debug="true">-->
+<!--        &lt;!&ndash;<configuration debug="true">&ndash;&gt;-->
 
-        <!--    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
-        <!--        <file>logs/imsApp.log</file>-->
+<!--        &lt;!&ndash;    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">&ndash;&gt;-->
+<!--        &lt;!&ndash;        <file>logs/imsApp.log</file>&ndash;&gt;-->
 
-        <!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--        &lt;!&ndash;        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">&ndash;&gt;-->
 
-        <!--            <fileNamePattern>logs/imsApp-%d{yyyy-MM-dd}.log</fileNamePattern>-->
-        <!--            &lt;!&ndash; keep 7 days of history &ndash;&gt;-->
-        <!--            <maxHistory>7</maxHistory>-->
-        <!--        </rollingPolicy>-->
+<!--        &lt;!&ndash;            <fileNamePattern>logs/imsApp-%d{yyyy-MM-dd}.log</fileNamePattern>&ndash;&gt;-->
+<!--        &lt;!&ndash;            &lt;!&ndash; keep 7 days of history &ndash;&gt;&ndash;&gt;-->
+<!--        &lt;!&ndash;            <maxHistory>7</maxHistory>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </rollingPolicy>&ndash;&gt;-->
 
-        <!--        <encoder>-->
-        <!--            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>-->
-        <!--        </encoder>-->
-        <!--    </appender>-->
+<!--        &lt;!&ndash;        <encoder>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </encoder>&ndash;&gt;-->
+<!--        &lt;!&ndash;    </appender>&ndash;&gt;-->
 
-        <!--    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">-->
-        <!--        <encoder>-->
-        <!--            <pattern>%d{HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n</pattern>-->
-        <!--        </encoder>-->
-        <!--    </appender>-->
+<!--        &lt;!&ndash;    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">&ndash;&gt;-->
+<!--        &lt;!&ndash;        <encoder>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <pattern>%d{HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n</pattern>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </encoder>&ndash;&gt;-->
+<!--        &lt;!&ndash;    </appender>&ndash;&gt;-->
 
-        <!--    <root level="INFO">-->
-        <!--        <appender-ref ref="CONSOLE" />-->
-        <!--        <appender-ref ref="FILE" />-->
-        <!--    </root>-->
+<!--        &lt;!&ndash;    <root level="INFO">&ndash;&gt;-->
+<!--        &lt;!&ndash;        <appender-ref ref="CONSOLE" />&ndash;&gt;-->
+<!--        &lt;!&ndash;        <appender-ref ref="FILE" />&ndash;&gt;-->
+<!--        &lt;!&ndash;    </root>&ndash;&gt;-->
 
-        <!--</configuration>-->
+<!--        &lt;!&ndash;</configuration>&ndash;&gt;-->

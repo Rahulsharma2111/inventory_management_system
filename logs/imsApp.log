@@ -1,0 +1,131 @@
+2025-11-04 18:04:05.739 [] [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>(21) - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-04 18:04:05.791 [] [main] INFO  c.m.InventoryManagementSystemApplication.logStarting(53) - Starting InventoryManagementSystemApplication using Java 25 with PID 444 (D:\Personal Project\inventory_management_system\Backend\mis\target\classes started by Rahul Sharma in D:\Personal Project\inventory_management_system)
+2025-11-04 18:04:05.793 [] [main] INFO  c.m.InventoryManagementSystemApplication.logStartupProfileInfo(652) - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 18:04:06.788 [] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn(145) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-04 18:04:06.859 [] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn(213) - Finished Spring Data repository scanning in 62 ms. Found 5 JPA repository interfaces.
+2025-11-04 18:04:07.626 [] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize(111) - Tomcat initialized with port 8080 (http)
+2025-11-04 18:04:07.644 [] [main] INFO  o.a.coyote.http11.Http11NioProtocol.log(168) - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-04 18:04:07.647 [] [main] INFO  o.a.catalina.core.StandardService.log(168) - Starting service [Tomcat]
+2025-11-04 18:04:07.647 [] [main] INFO  o.a.catalina.core.StandardEngine.log(168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-04 18:04:07.715 [] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log(168) - Initializing Spring embedded WebApplicationContext
+2025-11-04 18:04:07.715 [] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext(301) - Root WebApplicationContext: initialization completed in 1857 ms
+2025-11-04 18:04:07.893 [] [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation(31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-04 18:04:07.972 [] [main] INFO  org.hibernate.Version.logVersion(44) - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-04 18:04:08.032 [] [main] INFO  o.h.c.i.RegionFactoryInitiator.initiateService(50) - HHH000026: Second-level cache disabled
+2025-11-04 18:04:08.358 [] [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer(87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-04 18:04:08.385 [] [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(109) - HikariPool-1 - Starting...
+2025-11-04 18:04:08.533 [] [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast(580) - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2299d903
+2025-11-04 18:04:08.534 [] [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(122) - HikariPool-1 - Start completed.
+2025-11-04 18:04:08.622 [] [main] INFO  o.hibernate.orm.connections.pooling.logConnectionInfo(163) - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-04 18:04:09.515 [] [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService(59) - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-04 18:04:09.618 [] [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(447) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04 18:04:09.987 [] [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory.<clinit>(49) - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-04 18:04:11.024 [] [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(110) - Global AuthenticationManager configured with UserDetailsService bean with name jwtCustomDetailsService
+2025-11-04 18:04:11.090 [] [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(258) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04 18:04:11.342 [] [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized(366) - 23 mappings in 'requestMappingHandlerMapping'
+2025-11-04 18:04:11.444 [] [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping.logMappings(187) - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-04 18:04:11.590 [] [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(666) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-04 18:04:11.663 [] [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(336) - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-04 18:04:11.863 [] [main] INFO  o.a.coyote.http11.Http11NioProtocol.log(168) - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-04 18:04:11.883 [] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start(243) - Tomcat started on port 8080 (http) with context path '/'
+2025-11-04 18:04:11.891 [] [main] INFO  c.m.InventoryManagementSystemApplication.logStarted(59) - Started InventoryManagementSystemApplication in 6.766 seconds (process running for 7.418)
+2025-11-04 18:04:58.318 [] [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown.shutDownGracefully(54) - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04 18:04:58.341 [] [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown.doShutdown(76) - Graceful shutdown complete
+2025-11-04 18:04:58.348 [] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy(660) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04 18:04:58.350 [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(349) - HikariPool-1 - Shutdown initiated...
+2025-11-04 18:04:58.361 [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(351) - HikariPool-1 - Shutdown completed.
+2025-11-04 18:08:14.642 [] [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>(21) - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-04 18:08:14.677 [] [main] INFO  c.m.InventoryManagementSystemApplication.logStarting(53) - Starting InventoryManagementSystemApplication using Java 25 with PID 8720 (D:\Personal Project\inventory_management_system\Backend\mis\target\classes started by Rahul Sharma in D:\Personal Project\inventory_management_system)
+2025-11-04 18:08:14.678 [] [main] INFO  c.m.InventoryManagementSystemApplication.logStartupProfileInfo(652) - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 18:08:15.440 [] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn(145) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-04 18:08:15.519 [] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn(213) - Finished Spring Data repository scanning in 67 ms. Found 5 JPA repository interfaces.
+2025-11-04 18:08:16.154 [] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize(111) - Tomcat initialized with port 8080 (http)
+2025-11-04 18:08:16.167 [] [main] INFO  o.a.coyote.http11.Http11NioProtocol.log(168) - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-04 18:08:16.169 [] [main] INFO  o.a.catalina.core.StandardService.log(168) - Starting service [Tomcat]
+2025-11-04 18:08:16.169 [] [main] INFO  o.a.catalina.core.StandardEngine.log(168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-04 18:08:16.238 [] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log(168) - Initializing Spring embedded WebApplicationContext
+2025-11-04 18:08:16.239 [] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext(301) - Root WebApplicationContext: initialization completed in 1500 ms
+2025-11-04 18:08:16.376 [] [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation(31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-04 18:08:16.442 [] [main] INFO  org.hibernate.Version.logVersion(44) - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-04 18:08:16.501 [] [main] INFO  o.h.c.i.RegionFactoryInitiator.initiateService(50) - HHH000026: Second-level cache disabled
+2025-11-04 18:08:16.806 [] [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer(87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-04 18:08:16.828 [] [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(109) - HikariPool-1 - Starting...
+2025-11-04 18:08:17.017 [] [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast(580) - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2299d903
+2025-11-04 18:08:17.020 [] [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection(122) - HikariPool-1 - Start completed.
+2025-11-04 18:08:17.084 [] [main] INFO  o.hibernate.orm.connections.pooling.logConnectionInfo(163) - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-04 18:08:17.780 [] [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService(59) - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-04 18:08:17.956 [] [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(447) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04 18:08:18.215 [] [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory.<clinit>(49) - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-04 18:08:19.046 [] [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(110) - Global AuthenticationManager configured with UserDetailsService bean with name jwtCustomDetailsService
+2025-11-04 18:08:19.114 [] [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(258) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04 18:08:19.261 [] [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized(366) - 23 mappings in 'requestMappingHandlerMapping'
+2025-11-04 18:08:19.351 [] [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping.logMappings(187) - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-04 18:08:19.438 [] [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(666) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-04 18:08:19.476 [] [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(336) - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-04 18:08:19.607 [] [main] INFO  o.a.coyote.http11.Http11NioProtocol.log(168) - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-04 18:08:19.626 [] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start(243) - Tomcat started on port 8080 (http) with context path '/'
+2025-11-04 18:08:19.632 [] [main] INFO  c.m.InventoryManagementSystemApplication.logStarted(59) - Started InventoryManagementSystemApplication in 5.513 seconds (process running for 5.905)
+2025-11-04 18:08:27.276 [] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log(168) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 18:08:27.281 [] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean(532) - Initializing Servlet 'dispatcherServlet'
+2025-11-04 18:08:27.287 [] [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.initMultipartResolver(533) - Detected StandardServletMultipartResolver
+2025-11-04 18:08:27.292 [] [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.initLocaleResolver(557) - Detected AcceptHeaderLocaleResolver
+2025-11-04 18:08:27.294 [] [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.initThemeResolver(583) - Detected FixedThemeResolver
+2025-11-04 18:08:27.305 [] [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.initRequestToViewNameTranslator(733) - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5d4e11ce
+2025-11-04 18:08:27.306 [] [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.initFlashMapManager(797) - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6c9b2d0e
+2025-11-04 18:08:27.310 [] [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.initServletBean(549) - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-04 18:08:27.312 [] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean(554) - Completed initialization in 25 ms
+2025-11-04 18:08:27.671 [c2ec17ca-8622-40a7-b8f9-b32b54b12a17] [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet.traceDebug(120) - POST "/organisation/login", parameters={}
+2025-11-04 18:08:27.680 [c2ec17ca-8622-40a7-b8f9-b32b54b12a17] [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler(533) - Mapped to com.mis.Controller.OrganisationController#loginToOrganisation(LoginRequest)
+2025-11-04 18:08:28.019 [c2ec17ca-8622-40a7-b8f9-b32b54b12a17] [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor.traceDebug(120) - Read "application/json;charset=UTF-8" to [LoginRequest(email=test14386+5@gmail.com, password=123456)]
+2025-11-04 18:08:30.044 [c2ec17ca-8622-40a7-b8f9-b32b54b12a17] [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters(310) - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04 18:08:30.054 [c2ec17ca-8622-40a7-b8f9-b32b54b12a17] [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug(120) - Writing [{data=OrganisationResponse(id=14, name=Shiv Mart Pvt. Ltd., registrationNumber=dfghjksfa545, type=St (truncated)...]
+2025-11-04 18:08:30.123 [c2ec17ca-8622-40a7-b8f9-b32b54b12a17] [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet.logResult(1138) - Completed 200 OK
+2025-11-04 18:08:30.483 [e8bab9f4-e186-4a64-af93-6fbea5f0ef29] [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet.traceDebug(120) - GET "/organisation/14", parameters={}
+2025-11-04 18:08:30.486 [e8bab9f4-e186-4a64-af93-6fbea5f0ef29] [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler(533) - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-11-04 18:08:30.486 [81808e0f-7043-4458-8a8e-267490721b64] [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.traceDebug(120) - GET "/dashboard/14", parameters={}
+2025-11-04 18:08:30.487 [489d02e9-7514-48cf-b7c6-abe496840953] [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet.traceDebug(120) - GET "/files/14", parameters={}
+2025-11-04 18:08:30.489 [81808e0f-7043-4458-8a8e-267490721b64] [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler(533) - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-11-04 18:08:30.489 [489d02e9-7514-48cf-b7c6-abe496840953] [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler(533) - Mapped to com.mis.Controller.FilesController#getFiles(Long)
+2025-11-04 18:08:30.532 [e8bab9f4-e186-4a64-af93-6fbea5f0ef29] [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters(251) - Found 'Content-Type:image/png' in response
+2025-11-04 18:08:30.534 [e8bab9f4-e186-4a64-af93-6fbea5f0ef29] [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug(120) - Writing [URL [file:///C:/ModuloBytes/ims/14/media/1/Screenshot%202025-10-23%20161813.png]]
+2025-11-04 18:08:30.540 [489d02e9-7514-48cf-b7c6-abe496840953] [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters(310) - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04 18:08:30.543 [489d02e9-7514-48cf-b7c6-abe496840953] [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug(120) - Writing [[com.mis.Entity.Media@4ceb4f2a, com.mis.Entity.Media@706e82f5, com.mis.Entity.Media@155c7ace, com.mi (truncated)...]
+2025-11-04 18:08:30.551 [e8bab9f4-e186-4a64-af93-6fbea5f0ef29] [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet.logResult(1138) - Completed 200 OK
+2025-11-04 18:08:30.559 [489d02e9-7514-48cf-b7c6-abe496840953] [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet.logResult(1138) - Completed 200 OK
+2025-11-04 18:08:30.566 [cf6ee71a-7021-4db9-b773-6ac618eac5c5] [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet.traceDebug(120) - GET "/organisation/14", parameters={}
+2025-11-04 18:08:30.568 [cf6ee71a-7021-4db9-b773-6ac618eac5c5] [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler(533) - Mapped to com.mis.Controller.OrganisationController#getMediaFile(Long)
+2025-11-04 18:08:30.574 [81808e0f-7043-4458-8a8e-267490721b64] [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters(310) - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04 18:08:30.577 [81808e0f-7043-4458-8a8e-267490721b64] [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug(120) - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=5, totalSalesAmount=1875.16), meta={message=Da (truncated)...]
+2025-11-04 18:08:30.578 [cefc24dd-85b1-4483-97d2-e114d0001730] [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet.traceDebug(120) - GET "/files/14", parameters={}
+2025-11-04 18:08:30.580 [cefc24dd-85b1-4483-97d2-e114d0001730] [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler(533) - Mapped to com.mis.Controller.FilesController#getFiles(Long)
+2025-11-04 18:08:30.584 [cf6ee71a-7021-4db9-b773-6ac618eac5c5] [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters(251) - Found 'Content-Type:image/png' in response
+2025-11-04 18:08:30.585 [cf6ee71a-7021-4db9-b773-6ac618eac5c5] [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug(120) - Writing [URL [file:///C:/ModuloBytes/ims/14/media/1/Screenshot%202025-10-23%20161813.png]]
+2025-11-04 18:08:30.593 [81808e0f-7043-4458-8a8e-267490721b64] [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.logResult(1138) - Completed 200 OK
+2025-11-04 18:08:30.594 [cf6ee71a-7021-4db9-b773-6ac618eac5c5] [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet.logResult(1138) - Completed 200 OK
+2025-11-04 18:08:30.603 [cefc24dd-85b1-4483-97d2-e114d0001730] [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters(310) - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04 18:08:30.605 [cefc24dd-85b1-4483-97d2-e114d0001730] [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug(120) - Writing [[com.mis.Entity.Media@6ddb6149, com.mis.Entity.Media@156c752, com.mis.Entity.Media@4b05af17, com.mis (truncated)...]
+2025-11-04 18:08:30.611 [cefc24dd-85b1-4483-97d2-e114d0001730] [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet.logResult(1138) - Completed 200 OK
+2025-11-04 18:08:30.613 [d21e4100-dd30-4c8a-a835-ba4cc9f12a96] [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet.traceDebug(120) - GET "/dashboard/14", parameters={}
+2025-11-04 18:08:30.615 [d21e4100-dd30-4c8a-a835-ba4cc9f12a96] [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler(533) - Mapped to com.mis.Controller.DashboardController#getDashboardStatistics(Long)
+2025-11-04 18:08:30.624 [d21e4100-dd30-4c8a-a835-ba4cc9f12a96] [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters(310) - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04 18:08:30.625 [d21e4100-dd30-4c8a-a835-ba4cc9f12a96] [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug(120) - Writing [{data=DashboardResponse(totalProducts=13, totalOrders=5, totalSalesAmount=1875.16), meta={message=Da (truncated)...]
+2025-11-04 18:08:30.628 [d21e4100-dd30-4c8a-a835-ba4cc9f12a96] [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet.logResult(1138) - Completed 200 OK
+2025-11-04 18:15:51.043 [] [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown.shutDownGracefully(54) - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04 18:15:51.069 [] [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown.doShutdown(76) - Graceful shutdown complete
+2025-11-04 18:15:51.075 [] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy(660) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04 18:15:51.079 [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(349) - HikariPool-1 - Shutdown initiated...
+2025-11-04 18:15:51.087 [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close(351) - HikariPool-1 - Shutdown completed.
